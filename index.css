@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: outfit;
   }
   
   /* Header Styles */
@@ -214,21 +215,31 @@
   }
   
   
-  @media (max-width: 768px) {
+  @media (max-width: 568px) {
     .grid-container {
-      grid-template-columns: repeat(2, 1fr); 
-      grid-template-rows: auto; 
+     display: flex;
+     flex-wrap: wrap;
+     height: auto;
+     width: auto;
+     font-family:outfit;
+     /* font-size:20px; */
+
+    } 
+    .draw-img{
+      display: none;
     }
-  
-    .grid-item-tall {
-      grid-column: span 2; 
-    }
+    
+   
+
   }
   
   
   @media (max-width: 768px) {
     .features h2 {
       font-size: 1.5rem;
+    }
+    .draw-img{
+      display: none;
     }
   
     .grid-item {
